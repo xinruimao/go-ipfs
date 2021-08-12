@@ -22,6 +22,9 @@ if test "$MAKE_SKIP_PATH" != "1"; then
   fi
 fi
 
+echo "PATH=$PATH"
+echo "IPFS IS $(type ipfs)"
+
 # set sharness verbosity. we set the env var directly as
 # it's too late to pass in --verbose, and --verbose is harder
 # to pass through in some cases.
