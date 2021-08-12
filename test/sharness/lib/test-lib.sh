@@ -9,6 +9,7 @@
 # use the ipfs tool to test against
 
 # add current directory to path, for ipfs tool.
+set -x
 if test "$MAKE_SKIP_PATH" != "1"; then
   BIN=$(cd .. && echo `pwd`/bin)
   BIN2=$(cd ../.. && echo `pwd`/cmd/ipfs)
@@ -523,3 +524,4 @@ findprovs_expect() {
     test_cmp findprovsOut expected
   '
 }
+set +x
