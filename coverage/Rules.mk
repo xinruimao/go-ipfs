@@ -50,7 +50,9 @@ $(d)/sharness_tests.coverprofile: $(d)/ipfs cmd/ipfs/ipfs-test-cover $(d)/covera
 	(cd $(@D)/sharnesscover && find . -type f | gocovmerge -list -) > $@
 
 
+$(info PATH BEFORE $(PATH))
 PATH := $(realpath $(d)):$(PATH)
+$(info PATH AFTER $(PATH))
 
 TGTS_$(d) += $(d)/sharness_tests.coverprofile
 
