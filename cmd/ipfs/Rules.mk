@@ -6,6 +6,7 @@ TEST_GO_BUILD += $(d)-try-build
 CLEAN += $(IPFS_BIN_$(d))
 
 PATH := $(realpath $(d)):$(PATH)
+$(info added $(d) to PATH: $(PATH))
 
 # disabled for now
 # depend on *.pb.go files in the repo as Order Only (as they shouldn't be rebuilt if exist)

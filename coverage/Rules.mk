@@ -52,6 +52,7 @@ $(d)/sharness_tests.coverprofile: $(d)/ipfs cmd/ipfs/ipfs-test-cover $(d)/covera
 
 $(info PATH BEFORE $(PATH))
 PATH := $(realpath $(d)):$(PATH)
+$(info added $(d) to PATH: $(PATH))
 $(info PATH AFTER $(PATH))
 
 TGTS_$(d) += $(d)/sharness_tests.coverprofile

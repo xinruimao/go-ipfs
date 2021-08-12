@@ -30,6 +30,7 @@ export MAKE_SKIP_PATH=1
 
 $(T_$(d)): $$(DEPS_$(d)) # use second expansion so coverage can inject dependency
 	@echo "*** $@ ***"
+	@echo "$(PATH)"
 ifeq ($(CONTINUE_ON_S_FAILURE),1)
 	-@(cd $(@D) && ./$(@F)) 2>&1
 else
