@@ -148,6 +148,7 @@ jobs:
         docker-compose up -d
 
     - *make_out_dirs
+    - *restore_gomod
 
     - run:
         name: Setup Environment Variables
