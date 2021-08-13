@@ -10,6 +10,7 @@
 
 # add current directory to path, for ipfs tool.
 set -x
+declare -p PATH
 if test "$MAKE_SKIP_PATH" != "1"; then
   BIN=$(cd .. && echo `pwd`/bin)
   BIN2=$(cd ../.. && echo `pwd`/cmd/ipfs)
