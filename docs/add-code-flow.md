@@ -100,3 +100,4 @@ Within the function, a new `Adder` is created with the configured `Blockstore` a
   - **[`adder.PinRoot()`](https://github.com/ipfs/go-ipfs/blob/v0.4.18/core/coreunix/add.go#L171)** - *Pin all files under the `MFS` **root***
 
     The whole process ends with `PinRoot` recursively pinning all the files under the `MFS` **root**
+    
